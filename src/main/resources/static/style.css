@@ -1,0 +1,72 @@
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Dark background color */
+body {
+    background-color: #020b38;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    padding: 30px;
+}
+
+/* Page title */
+h1 {
+    font-size: 30px;
+    text-align: center;
+    padding: 20px;
+    color: #060ac0;
+}
+
+/* WebSocket status messages */
+#status {
+    font-size: 20px;
+    text-align: center;
+    padding: 10px;
+}
+
+/* WebSocket message output */
+#message-output {
+    font-size: 16px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+a {
+    color: #00f;
+}
+
+p {
+    margin: 10px;
+    margin-bottom: 20px;
+}
+
+code {
+    background-color: #222;
+    color: #00f;
+    padding: 2px 4px;
+    border-radius: 4px;
+}
+
+#message-output code {
+    background-color: #333;
+}
+
+button {
+    background-color: #00f;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color: #003;
+}
+
+#connect-button {
+    display: block;
+    margin: 20px auto;
+}
