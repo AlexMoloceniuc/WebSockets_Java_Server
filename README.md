@@ -5,7 +5,8 @@ Java Spring Boot server broadcasting JSON messages to multiple clients using Web
 Application Features:
 
 2.1. The server broadcasts JSON messages every 5 seconds for producing Units, using the following method:
-@Scheduled(fixedRate = 5000)  // broadcasting every 5 seconds
+
+    @Scheduled(fixedRate = 5000)  // broadcasting every 5 seconds
     public void broadcastUnit() { 
         unitCount++;
         String message = "{\"message\":\"Unit " + unitCount + "\"}";
