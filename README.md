@@ -15,7 +15,8 @@ Application Features:
     }
 
 2.2. Each clients connects to the WebSocket server and subscribes to the server using:
-stompClient.subscribe('/topic/units', function(message) {...}
+    
+    stompClient.subscribe('/topic/units', function(message) {...}
 
 The client is written in HTML (indesx.html), CSS (style.css) and JAVASCRIPT (script.js).
 The server can support multiple clients at the same time.
