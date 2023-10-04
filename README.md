@@ -82,20 +82,3 @@ The server can support multiple clients at the same time.
 - Server produced Unit n+2,
 
 where n = the first unit the server produced after the client has connected to the server.
-
-*2.5. Security layer*
-
-Selected option: WebSocket Authentication with Spring Security. The application requires WebSocket clients to authenticate using the login credentials written in the UserCredentialsConfig.java file, so it will only accept WebSocket connections from authenticated clients.
-
-*2.4. Scalability*
-
-- Before implemnenting the security layer: any new client could easily join by accessing the localhost:8080/index.html address, so the application was greatly scalable (but not secure).
-- after implementing Spring Security (and user login credentials), new user crdentials can be manually added in the UserCredentialsConfig.java class, by writing the following lines:
-
-        // Define user1 with username "user1" and password "password1"
-        UserDetails user1 = User.withUsername("user1")
-                .password(passwordEncoder().encode("password1"))
-                .roles("USER")
-                .build();
-
-This is not as scalable as before, and a better approach would have been to use a Database, but for the purpose of the application (being able to add a few extra clients easily, not 100+), it is still easy to implement a few new clients without increasing the complexity of the app.
