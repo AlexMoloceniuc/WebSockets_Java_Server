@@ -1,5 +1,5 @@
 # WebSockets_Java_Server
-Java Spring Boot server broadcasting JSON messages to multiple clients using WebSockets.
+Java Spring Boot server broadcasting JSON messages to multiple clients using WebSockets and Spring Security.
 
 Development steps:
 1. Set up a new Spring Boot project using Spring initializer https://start.spring.io/ and adding the following dependencies: Spring Web, WebSockets and Spring Security.
